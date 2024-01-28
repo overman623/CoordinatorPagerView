@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ivFooterLocationOff"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/tag_stroke_ffffff_rt_r4_soild_f44336"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFooterLocationOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/c_FFFFFF"
+            android:text="Button"
+            app:layout_constraintTop_toTopOf="@+id/ivFooterLocationOff"
+            app:layout_constraintBottom_toBottomOf="@id/ivFooterLocationOff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFooterDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:textColor="@color/c_6D310F"
+            android:textSize="8dp"
+            android:text="-"
+            app:layout_constraintTop_toBottomOf="@id/ivFooterLocationOff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llFooterDescription"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tvFooterDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/c_6D310F"
+                android:textSize="10dp"
+                android:text="Title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/c_6D310F"
+                android:textSize="8dp"
+                android:text="Text : This is a description.\nThis is a description.\nThis is a description."
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="@color/c_6D310F"
+                android:textSize="10dp"
+                android:text="Text"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_6D310F"
+                android:textSize="8dp"
+                android:text="Text : This is a description.\nThis is a description.\nThis is a description.\nThis is a description."
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
